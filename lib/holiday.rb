@@ -60,7 +60,7 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season,holiday|
     season_supplies = []
     holiday.each do |holiday, supply|
-      season_supplies << supply.values
+      season_supplies << supply
     end
     puts "#{season.to_s}: #{season_supplies.join(", ")}"
   end
