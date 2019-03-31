@@ -61,6 +61,8 @@ def all_supplies_in_holidays(holiday_hash)
     season_supplies = []
     holiday_hash[season].each do |holiday, supply|
       season_supplies << holiday.values
+    end
+  end
 end
 
 def all_holidays_with_bbq(holiday_hash)
